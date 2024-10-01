@@ -5,4 +5,15 @@
 html, body {
     overflow: hidden; /* Para ocultar ambas barras de desplazamiento */
     height: 100%; /* Asegúrate de que el body tenga 100% de altura */
-  }
+}
+
+
+h1, h2, h3{
+  font-family: 'Clash Display', sans-serif;
+}
+
+h4, h5{
+  font-family: 'Author', sans-serif;
+  font-size: 1.6rem;
+}
+

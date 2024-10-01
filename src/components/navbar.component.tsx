@@ -15,7 +15,7 @@ const NavbarComponent = ({ children }: NavbarProps) => {
     <div className="grid grid-cols-[1fr_100px]">
       {children}
       <div className="flex flex-col justify-center">
-        <div className="flex absolute top-6 right-10 gap-5">
+        <div className="flex absolute top-6 left-10 gap-5">
         <SocialMediaComponent />
         </div>
         <nav className="flex flex-col items-center bg-white-transparent gap-8 p-8 pt-2 pb-2  rounded-full w-10">

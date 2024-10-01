@@ -39,7 +39,7 @@ const CoverParticles = () => {
                             },
                             modes: {
                                 push: {
-                                    quantity: 3,
+                                    quantity: 2,
                                 },
                                 repulse: {
                                     distance: 200,
