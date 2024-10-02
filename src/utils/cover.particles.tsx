@@ -39,7 +39,7 @@ const CoverParticles = () => {
                             },
                             modes: {
                                 push: {
-                                    quantity: 2,
+                                    quantity: 1,
                                 },
                                 repulse: {
                                     distance: 200,
@@ -72,7 +72,7 @@ const CoverParticles = () => {
                                 density: {
                                     enable: true,
                                 },
-                                value: 80,
+                                value: 40,
                             },
                             opacity: {
                                 value: 0.5,

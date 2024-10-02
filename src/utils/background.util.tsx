@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import background from '../assets/gradienteFondo.jpg'
+
 
 interface BackgroundGradientProps {
   children: ReactNode; 
@@ -10,12 +10,7 @@ const BackgroundGradient: React.FC<BackgroundGradientProps> = ({
 }) => {
   return (
     <div
-    className="h-screen bg-cover bg-center -z-10"
-    style={{
-      backgroundImage: `url(${background})`,
-      backgroundPosition: 'center', 
-      backgroundSize: '99%',
-    }}
+    className="min-h-screen bg-black -z-10"
   >
       {children}
     </div>
