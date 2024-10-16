@@ -1,17 +1,26 @@
+import { LucideIcon } from "lucide-react";
 import styled from "styled-components";
 
-const CardHumanSkills = () => {
+interface SoftSkillsProps{
+  title: string; 
+  description: string;
+  Icon: LucideIcon;
+}
+
+const CardHumanSkills = ({title, description, Icon}: SoftSkillsProps) => {
   return (
     <StyledWrapper>
       <div className="card-container">
         <div className="card">
           <div className="front-content">
-            <p>Hover me</p>
+            <p>{title}</p>
           </div>
           <div className="content">
-            <p className="heading">Card Hover</p>
-            <p>
-                hola
+            <div className="flex justify-center items-center">
+            <Icon size={'3.5rem'} />
+            </div>
+            <p className="text-sm text-black">
+              {description}
             </p>
           </div>
         </div>
@@ -41,13 +50,12 @@ const StyledWrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
 .card .front-content p {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 1000;
   opacity: 1;
   background: white;
   background-clip: text;
@@ -62,12 +70,10 @@ const StyledWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 0.5fr 1.1fr;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
   background: #2EBEDD;
   color: #e8e8e8;
   padding: 20px;
