@@ -39,7 +39,7 @@ const CoverParticles = () => {
                             },
                             modes: {
                                 push: {
-                                    quantity: 2,
+                                    quantity: 1,
                                 },
                                 repulse: {
                                     distance: 200,
@@ -72,7 +72,7 @@ const CoverParticles = () => {
                                 density: {
                                     enable: true,
                                 },
-                                value: 80,
+                                value: 40,
                             },
                             opacity: {
                                 value: 0.5,
@@ -81,7 +81,7 @@ const CoverParticles = () => {
                                 type: "circle",
                             },
                             size: {
-                                value: { min: 2, max: 3 },
+                                value: { min: 3, max: 5 },
                             },
                         },
                         detectRetina: true,

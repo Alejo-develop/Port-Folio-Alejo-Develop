@@ -10,41 +10,41 @@ export const appRouter = createBrowserRouter([
   {
     path: "/",
     element: (
-      <PageTransition>
-        <NavbarComponent>
+      <NavbarComponent>
+        <PageTransition>
           <HomePage />
-        </NavbarComponent>
-      </PageTransition>
+        </PageTransition>
+      </NavbarComponent>
     ),
   },
   {
     path: "/aboutme",
     element: (
-      <PageTransition>
-        <NavbarComponent>
+      <NavbarComponent>
+        <PageTransition>
           <AboutMePage />
-        </NavbarComponent>
-      </PageTransition>
+        </PageTransition>
+      </NavbarComponent>
     ),
   },
   {
     path: "/skills",
     element: (
-      <PageTransition>
-        <NavbarComponent>
+      <NavbarComponent>
+        <PageTransition>
           <MySkillsPage />
-        </NavbarComponent>
-      </PageTransition>
+        </PageTransition>
+      </NavbarComponent>
     ),
   },
   {
     path: "/projects",
     element: (
-      <PageTransition>
-        <NavbarComponent>
+      <NavbarComponent>
+        <PageTransition>
           <ProjectsPage />
-        </NavbarComponent>
-      </PageTransition>
+        </PageTransition>
+      </NavbarComponent>
     ),
   },
 ]);

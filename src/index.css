@@ -12,7 +12,7 @@ h1, h2, h3{
   font-family: 'Clash Display', sans-serif;
 }
 
-h4, h5{
+h4, h5, p{
   font-family: 'Author', sans-serif;
   font-size: 1.6rem;
 }

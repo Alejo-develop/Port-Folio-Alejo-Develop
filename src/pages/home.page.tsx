@@ -1,9 +1,17 @@
+import Spline from "@splinetool/react-spline";
 import { TypeAnimation } from "react-type-animation";
 
 export default function HomePage() {
   return (
-    <>
-      <div className="h-screen grid grid-rows-2 ml-20">
+    <div className="relative h-screen">
+      <div>
+      <Spline
+        scene="https://prod.spline.design/8qUFBwjwB6dPBLnU/scene.splinecode"
+        className="absolute inset-0" 
+        style={{ zIndex: -1, transform: 'translate(25%, -12%)', }} 
+      />
+      </div>
+      <div className="grid grid-rows-2 ml-20 h-full">
         <div className="flex flex-col justify-end items-center">
           <h1
             className="text-white text-7xl font-bold transition-transform duration-300 hover:scale-105"
@@ -25,7 +33,7 @@ export default function HomePage() {
 
         <div className="flex justify-center items-center">
           <div
-            className="flex flex-col justify-center bg-black bg-opacity-70 text-center w-96 h-32 text-2xl backdrop-blur-lg border-"
+            className="flex flex-col justify-center bg-black bg-opacity-70 text-center w-96 h-32 text-2xl backdrop-blur-lg"
             style={{
               background: "rgba(0, 0, 0, 0.5)",
               boxShadow:
@@ -45,6 +53,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
