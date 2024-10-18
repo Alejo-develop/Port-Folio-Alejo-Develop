@@ -6,6 +6,7 @@ import { faHtml5  ,faJs, faReact, faPython, faNodeJs } from '@fortawesome/free-b
 import tailwindcss from '../data/tailwind.svg'
 import typescript from '../data/typescript.svg'
 import nestJs from '../data/nestjs.svg'
+import vortexImg from '../data/img/Vortextream.png'
 
 export const history = [
   {
@@ -84,5 +85,16 @@ export const backSkills = [
   {
     title: 'NestJs',
     icon: nestJs
+  }
+]
+
+export const projects = [
+  {
+    title: 'Vortextream',
+    description: 'Vortextream is a web app for both live and digital streaming services, covering movies, anime, series, live podcasts, live streams and more.',
+    img: vortexImg,
+    deploy: 'https://vortextreaming.netlify.app/',
+    frontRepository: 'https://github.com/Alejo-develop/VorteXtream-FRONT_END/tree/main',
+    backRepository: 'https://github.com/DamianDev0/vortexStream-Backend-Nestjs/tree/main'
   }
 ]
